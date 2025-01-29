@@ -18,7 +18,6 @@ export function Form() {
           name='email'
           aria-label='email'
         />
-        <input type='text' />
       </div>
       <div className='flex flex-col gap-y-2 mb-4'>
         <label

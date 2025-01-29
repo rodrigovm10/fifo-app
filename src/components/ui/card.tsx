@@ -34,3 +34,12 @@ interface CardContentProps {
 export function CardContent({ children, className }: CardContentProps) {
   return <div className={cn('p-6 pt-0', className || '')}>{children}</div>
 }
+
+interface CardFooterProps {
+  children: React.ReactNode
+  className?: string
+}
+
+export function CardFooter({ children, className }: CardFooterProps) {
+  return <footer className={cn('p-6 pt-0', className || '')}>{children}</footer>
+}

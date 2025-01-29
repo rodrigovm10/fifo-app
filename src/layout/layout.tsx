@@ -1,7 +1,10 @@
-interface RootLayoutProps {
-  children: React.ReactNode
-}
+import { Outlet } from 'react-router'
 
-export function RootLayout({ children }: RootLayoutProps) {
-  return <main className='flex h-screen justify-center items-center'>{children}</main>
+export function RootLayout() {
+  return (
+    <main className='flex h-screen justify-center items-center'>
+      {' '}
+      <Outlet />
+    </main>
+  )
 }
